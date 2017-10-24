@@ -1,0 +1,21 @@
+Lab 1: System Intro
+Activity 2: questions2.txt, main/circle code : 30 points total
+Name: Quan Dong
+
+8. Given the program files main.c, circle.h and circle.c:
+
+    a.) What commands will compile the source files into object files?
+        
+        <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+        
+    b.) What command will link the object files
+        into an executable named broken?
+        
+        <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+        
+    c.) Why does the program compile but fail to link?
+    
+        <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	It compiles because there is nothing technically grammatically wrong with either .c files. There is a method called getAreas in circle.c, but main.c calls getArea instead.
+	As getArea() cannot be found in any of the linked files, the linking fails. Compilation will succeed as it does not check that all reference calls are valid. 
+	But the linking step does, as such that step will fail.
